@@ -140,8 +140,8 @@ const getFlattenedProjectScreens = (project) => {
 };
 
 export default function UIExplorations() {
-  // First project is open by default for immediate showcase exploration
-  const [expandedId, setExpandedId] = useState(projectsExplorations[0].id);
+  // All projects are collapsed by default until clicked
+  const [expandedId, setExpandedId] = useState(null);
   const [lightbox, setLightbox] = useState({
     isOpen: false,
     projectIndex: 0,
