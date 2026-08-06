@@ -46,7 +46,7 @@ export default function Loader({ onComplete }) {
           <div className="flex flex-col items-center gap-4">
             {/* Minimalist Designer Monogram / Name */}
             <span className="font-mono-label text-xs uppercase tracking-[0.3em] text-[#ffffff] font-medium">
-              AVINASH KUMAR
+              AVINASH VERMA
             </span>
 
             {/* 120px Thin Minimalist Progress Bar */}

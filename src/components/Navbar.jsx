@@ -67,7 +67,7 @@ export default function Navbar() {
           onClick={(e) => handleNavClick(e, '#home')}
           className="font-headline-md font-bold text-[#1b1c1c] tracking-tighter hover:opacity-80 transition-opacity uppercase text-base md:text-lg"
         >
-          AVINASH KUMAR
+          AVINASH VERMA
         </a>
 
         {/* Desktop Navigation Links */}

@@ -77,7 +77,7 @@ export default function Hero() {
               {/* Main Zoomed-Out Portrait with full uncropped view */}
               <img
                 src={heroPortrait}
-                alt="Avinash Kumar - UI/UX Designer"
+                alt="Avinash Verma - UI/UX Designer"
                 loading="eager"
                 decoding="async"
                 className="relative z-10 w-full h-full object-contain p-2.5 sm:p-3 filter grayscale contrast-110 brightness-95 transition-transform duration-700 ease-in-out group-hover:scale-105"

@@ -60,7 +60,7 @@ export default function About() {
               </h2>
               <div className="mt-2 flex items-center gap-2">
                 <span className="font-headline-md font-bold text-[#ffffff] text-base md:text-lg">
-                  Avinash Kumar
+                  Avinash Verma
                 </span>
                 <span className="font-mono-label text-xs text-[#8e8e93] border-l border-[#333338] pl-2 uppercase">
                   UI/UX Designer
@@ -71,7 +71,7 @@ export default function About() {
             <div className="w-full aspect-[3/4] rounded-[16px] border border-[#333338] overflow-hidden bg-[#18181b] relative group cursor-crosshair shadow-sm">
               <img
                 src={userPortrait}
-                alt="Avinash Kumar - UI/UX Designer"
+                alt="Avinash Verma - UI/UX Designer"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-105 filter grayscale contrast-115 brightness-95"
