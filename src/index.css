@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-surface: #fbf9f9;
+    --text-primary: #1b1c1c;
+    --text-secondary: #5d5f5f;
+    --border-subtle: #e4e2e2;
+    --border-outline: #7e7576;
+    --surface-low: #f5f3f3;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    color-scheme: light;
+    background-color: #fbf9f9;
+    color: #1b1c1c;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #fbf9f9;
+    color: #1b1c1c;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-geist {
+    font-family: 'Geist', sans-serif;
+  }
+
+  ::selection {
+    background-color: #1b1c1c;
+    color: #ffffff;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #1b1c1c;
+    outline-offset: 4px;
+  }
+}
+
+@layer utilities {
+  /* Layout Containers */
+  .container-editorial {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .container-editorial {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+  }
+
+  /* Refined, Balanced Typography Scale */
+  .font-display-lg {
+    font-family: 'Geist', sans-serif;
+    font-size: clamp(2rem, 3.6vw, 3.25rem); /* Refined 32px to 52px (formerly 80px) */
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+
+  .font-headline-lg {
+    font-family: 'Geist', sans-serif;
+    font-size: clamp(1.5rem, 2.2vw, 1.875rem); /* Refined 24px to 30px (formerly 40px) */
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  .font-headline-md {
+    font-family: 'Geist', sans-serif;
+    font-size: clamp(1.125rem, 1.5vw, 1.35rem); /* 18px to 21.6px */
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+
+  .font-label-caps {
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    line-height: 1.0;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .font-mono-label {
+    font-family: 'Geist', monospace, sans-serif;
+    font-size: 13px;
+    line-height: 1.0;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+
+  .font-body-lg {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+  }
+
+  .font-body-md {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+
+  /* Grid lines background texture */
+  .grid-lines {
+    background-image: linear-gradient(to right, #e4e2e2 1px, transparent 1px),
+                      linear-gradient(to bottom, #e4e2e2 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4e2e2;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b1c1c;
+}
