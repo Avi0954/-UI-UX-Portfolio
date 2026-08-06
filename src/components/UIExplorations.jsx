@@ -140,7 +140,8 @@ const getFlattenedProjectScreens = (project) => {
 };
 
 export default function UIExplorations() {
-  const [expandedId, setExpandedId] = useState('watchparty');
+  // First project is open by default for immediate showcase exploration
+  const [expandedId, setExpandedId] = useState(projectsExplorations[0].id);
   const [lightbox, setLightbox] = useState({
     isOpen: false,
     projectIndex: 0,
