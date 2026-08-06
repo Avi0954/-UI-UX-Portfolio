@@ -50,8 +50,10 @@ export default function Hero() {
               </a>
 
               <a
-                href="#contact"
-                onClick={(e) => handleScrollTo(e, 'contact')}
+                href="/Avinash_Verma_Resume.pdf"
+                download="Avinash_Verma_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border border-[#1b1c1c] bg-transparent text-[#1b1c1c] hover:bg-[#f0eeee] px-7 py-3.5 font-label-caps transition-colors duration-200 uppercase inline-flex items-center justify-center cursor-pointer text-center w-full sm:w-auto shadow-none"
               >
                 Download Resume
