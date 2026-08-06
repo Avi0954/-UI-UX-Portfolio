@@ -16,7 +16,7 @@ export default function Contact() {
 
     setTimeout(() => {
       setStatus('submitted');
-      const mailtoUrl = `mailto:hello@avinashkumar.com?subject=Project Inquiry from ${encodeURIComponent(
+      const mailtoUrl = `mailto:avinash1317k@gmail.com?subject=Project Inquiry from ${encodeURIComponent(
         formData.name
       )}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${encodeURIComponent(
         formData.email
@@ -138,9 +138,9 @@ export default function Contact() {
               Prefer email?{' '}
               <a
                 className="text-[#ffffff] hover:underline font-medium ml-1"
-                href="mailto:hello@avinashkumar.com"
+                href="mailto:avinash1317k@gmail.com"
               >
-                hello@avinashkumar.com
+                avinash1317k@gmail.com
               </a>
             </p>
 
